@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Account" representedClassName="Account" syncable="YES">
+        <attribute name="accountBalance" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="accountName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastDeposit" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lastPaycheck" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="Bill" representedClassName="Bill" syncable="YES">
+        <attribute name="accountName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="billAlert" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="billAmount" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="billDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="billReminder" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="billRepeat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="billType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentBill" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="transaction" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="Event" representedClassName="Event" syncable="YES">
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="MonthOverview" representedClassName="MonthOverview" syncable="YES">
+        <attribute name="accountName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carPayments" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="creditCards" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="food" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="gas" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="grocery" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="insurance" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="loan" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="monthString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mortgage" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="other" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="studentLoan" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="utilities" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Transaction" representedClassName="Transaction" syncable="YES">
+        <attribute name="accountName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="balanceAfterTransaction" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="transactionAmount" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="transactionName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transactionType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="withdrawal" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Bill" positionX="0" positionY="0" width="128" height="195"/>
+        <element name="Event" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="MonthOverview" positionX="-236" positionY="10" width="128" height="270"/>
+        <element name="Transaction" positionX="0" positionY="0" width="128" height="150"/>
+    </elements>
+</model>
